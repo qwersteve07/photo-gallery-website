@@ -1,0 +1,80 @@
+@import 'variable';
+@import 'normalize';
+
+html,
+body {
+    font-family: 'Noto Sans CJK TC', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', '微軟正黑體', 'helvetica',
+        'Arial', sans-serif;
+    font-weight: 400;
+    touch-action: manipulation;
+    color: $black;
+    font-size: 13px;
+    line-height: normal;
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: none;
+    border: 0;
+}
+// ----- remove tap background on mobile ----- //
+div,
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
