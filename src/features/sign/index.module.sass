@@ -1,0 +1,59 @@
+@import '../../base/variable'
+
+.sign
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .logo
+        width: 77px
+        height: auto
+        margin-bottom: 17px
+    .title
+        font-size: 30px
+        margin-bottom: 2px
+        font-weight: bold
+    .note
+        font-size: 15px
+        margin: 30px 0
+    .switch
+        margin: 30px 0
+        span
+            padding: 0 20px
+            position: relative
+            transition: all 0.2s ease
+            &:first-child:after
+                position: absolute
+                content: ''
+                width: 1px
+                height: 100%
+                background: $black
+                right: 0
+            &.active
+                font-weight: bold
+            &:hover
+                color: $black
+                cursor: pointer
+                transition: all 0.2s ease
+                text-shadow: 0 0 20px rgba($black,0.4)
+    .form
+        width: 30%
+    .button
+        display: flex
+        justify-content: center
+        margin: 24px 0
+    .sub-button
+        display: flex
+        justify-content: center
+        color: $warm-grey
+        transition: all 0.2s ease
+        &:hover
+            cursor: pointer
+        &:hover
+            transition: all 0.2s ease
+            text-shadow: 0 0 20px rgba($black,0.4)
+        
+    
